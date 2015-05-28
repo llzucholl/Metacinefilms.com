@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>METACINE Films</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="../favicon.ico" />
@@ -10,21 +10,46 @@
 	<link rel="stylesheet" href="../Css/normalize.css">
 </head>
 <body>
-	<header`class="Header">
-		<nav class="Nav">
+	<header class="Header">
+		<nav class="Nav" role="navigation">
 			<figure class="Nav_logo">
 				<a href="index.html" class="Nav_logoImgLink">
-					<img src="../img/logo.png" alt="Logo de Metacine films" class="Nav_logoImg">
+					<img src="../img/logoB.png" alt="Logo de Metacine films" class="Nav_logoImg">
 				</a>
-			</figure>
-			<ul class="Nav_botonera">
-				<li class="Nav_botoneraItem"><a href="#" class="Nav_botoneraItemLink">Quienes somos</a></li>
-				<li class="Nav_botoneraItem"><a href="#" class="Nav_botoneraItemLink">Equipo</a></li>
-				<li class="Nav_botoneraItem"><a href="#" class="Nav_botoneraItemLink">Servicios</a></li>
-				<li class="Nav_botoneraItem"><a href="#" class="Nav_botoneraItemLink">Producciones</a></li>
-				<li class="Nav_botoneraItem"><a href="#" class="Nav_botoneraItemLink">Contacto</a></li>
-			</ul>
+			</figure>		
+				<ul class="Nav_botonera">
+					<li class="Nav_botoneraItem"><a href="#QuienesSomos" class="Nav_botoneraItemLink">Quienes somos</a></li>
+					<li class="Nav_botoneraItem"><a href="#Equipo" class="Nav_botoneraItemLink"><span class="icon icon-somos"></span> Equipo</a></li>
+					<li class="Nav_botoneraItem"><a href="#Servicios" class="Nav_botoneraItemLink"><span class="icon icon-camara"></span> Servicios</a></li>
+					<li class="Nav_botoneraItem"><a href="#Producciones" class="Nav_botoneraItemLink"><span class="icon icon-film"></span> Producciones</a></li>
+					<li class="Nav_botoneraItem"><a href="#Contacto" class="Nav_botoneraItemLink"><span class="icon icon-contacto1"></span> Contacto</a></li>
+				</ul>	
 		</nav>
 	</header>
-</body>
+	<section class="Metareel">
+		<iframe class="Metareel_video" src="https://player.vimeo.com/video/109547147" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+	</section>
+	<div class="Socialbar">
+		<div class="Socialbar_contenedor">
+			<a target="blank_" href="https://www.facebook.com/metacine.estudio?fref=ts" class="Socialbar_enlace">
+				<figure class="Socialbar_contenedorIcon">
+					<!-- <img class="Socialbar_img" src="../img/FacebookIcon.png" alt="Icono de Facebook.com"> -->
+					<span class="Socialbar_icon icon-facebook"></span>
+				</figure>
+			</a>
+			<a target="blank_" href="https://www.youtube.com/channel/UCr0U4CUTq1UqXMXNksbtalQ" class="Socialbar_enlace">
+				<figure class="Socialbar_contenedorIcon">
+					<!-- <img class="Socialbar_img" src="../img/YouTubeIcon.png" alt="Icono de Youtube.com"> -->
+					<span class="Socialbar_icon icon-youtube"></span>
+				</figure>
+			</a>
+			<a target="blank_" href="https://vimeo.com/user33108727" class="Socialbar_enlace">
+				<figure class="Socialbar_contenedorIcon">
+					<!-- <img class="Socialbar_img" src="../img/VimeoIcon.png" alt="Icono de Vimeo.com"> -->
+					<span class="Socialbar_icon icon-vimeo"></span>
+				</figure>
+			</a>
+		</div>
+	</div>
+	</body>
 </html>
