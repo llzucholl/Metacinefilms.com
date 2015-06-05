@@ -9,20 +9,40 @@
 	<link rel="stylesheet" href="../Css/stylesheet.css">
 	<link rel="stylesheet" href="../Css/normalize.css">
 </head>
-<body>
+<body id="Head">
 	<header class="Header">
 		<nav class="Nav" role="navigation">
 			<figure class="Nav_logo">
-				<a href="index.html" class="Nav_logoImgLink">
+				<a href="#Head" class="Nav_logoImgLink">
 					<img src="../img/logoB.png" alt="Logo de Metacine films" class="Nav_logoImg">
 				</a>
 			</figure>		
 				<ul class="Nav_botonera">
-					<li class="Nav_botoneraItem"><a href="#QuienesSomos" class="Nav_botoneraItemLink">Quienes somos</a></li>
-					<li class="Nav_botoneraItem"><a href="#Equipo" class="Nav_botoneraItemLink"><span class="icon icon-somos"></span> Equipo</a></li>
-					<li class="Nav_botoneraItem"><a href="#Servicios" class="Nav_botoneraItemLink"><span class="icon icon-camara"></span> Servicios</a></li>
-					<li class="Nav_botoneraItem"><a href="#Producciones" class="Nav_botoneraItemLink"><span class="icon icon-film"></span> Producciones</a></li>
-					<li class="Nav_botoneraItem"><a href="#Contacto" class="Nav_botoneraItemLink"><span class="icon icon-contacto1"></span> Contacto</a></li>
+					<li class="Nav_botoneraItem">
+						<a href="#QuienesSomos" class="Nav_botoneraItemLink smooth">
+							Quienes somos
+						</a>
+					</li>
+					<li class="Nav_botoneraItem">
+						<a href="#Equipo" class="Nav_botoneraItemLink">
+							<span class="icon icon-somos"></span> Equipo
+						</a>
+					</li>
+					<li class="Nav_botoneraItem">
+						<a href="#Servicios" class="Nav_botoneraItemLink">
+							<span class="icon icon-camara"></span> Servicios
+						</a>
+					</li>
+					<li class="Nav_botoneraItem">
+						<a href="#Producciones" class="Nav_botoneraItemLink">
+							<span class="icon icon-film"></span> Producciones
+						</a>
+					</li>
+					<li class="Nav_botoneraItem">
+						<a href="#Contacto" class="Nav_botoneraItemLink">
+							<span class="icon icon-contacto1"></span> Contacto
+						</a>
+					</li>
 				</ul>	
 		</nav>
 	</header>
@@ -33,23 +53,60 @@
 		<div class="Socialbar_contenedor">
 			<a target="blank_" href="https://www.facebook.com/metacine.estudio?fref=ts" class="Socialbar_enlace">
 				<figure class="Socialbar_contenedorIcon">
-					<!-- <img class="Socialbar_img" src="../img/FacebookIcon.png" alt="Icono de Facebook.com"> -->
-					<span class="Socialbar_icon icon-facebook"></span>
+					<span class="Socialbar_icon Socialbar_iconFb icon-facebook"></span>
 				</figure>
 			</a>
 			<a target="blank_" href="https://www.youtube.com/channel/UCr0U4CUTq1UqXMXNksbtalQ" class="Socialbar_enlace">
 				<figure class="Socialbar_contenedorIcon">
-					<!-- <img class="Socialbar_img" src="../img/YouTubeIcon.png" alt="Icono de Youtube.com"> -->
-					<span class="Socialbar_icon icon-youtube"></span>
+					<span class="Socialbar_icon Socialbar_iconYoutube icon-youtube"></span>
 				</figure>
 			</a>
 			<a target="blank_" href="https://vimeo.com/user33108727" class="Socialbar_enlace">
-				<figure class="Socialbar_contenedorIcon">
-					<!-- <img class="Socialbar_img" src="../img/VimeoIcon.png" alt="Icono de Vimeo.com"> -->
-					<span class="Socialbar_icon icon-vimeo"></span>
+				<figure class="Socialbar_contenedorIcon vimeo">
+					<span class="Socialbar_icon Socialbar_iconVimeo icon-vimeo"></span>
 				</figure>
 			</a>
 		</div>
 	</div>
+	<section class="Body">
+		<article id="QuienesSomos" class="Body_quienes">
+			<h2 class="Body_quienesTitle title">Quienes somos</h2>
+			<p class="Body_quienesText text">
+				Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
+			</p>
+		</article>
+		<article id="Equipo" class="Equipo">
+			<h2 class="Equipo_title title">El equipo</h2>
+			<p class="Equipo_text text text">
+				Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
+			</p>
+			<ul class="Equipo_imgList">
+				<li class="Equipo_imgListItem">
+					<figure class="Equipo_imgContenedor Equipo_imgContenedorMk">
+						<img src="../Img/Equipo/Marco.jpg" alt="Marco Agredo" class="Equipo_img">
+						<figcaption class="Equipo_imgDescripcion">
+							<h2 class="Equipo_imgDescripcionTitulo title">Marco Agredo</h2>
+							<p class="Equipo_imgDescripcionTexto text">
+								Director, Licantropo y Sueñicultor
+							</p>
+						</figcaption>
+					</figure>
+				</li>
+				<li class="Equipo_imgListItem">
+					<figure class="Equipo_imgContenedor">
+						<img src="../Img/Equipo/zucho.jpg" alt="zucho LH" class="Equipo_img">
+						<figcaption class="Equipo_imgDescripcion">
+							<h2 class="Equipo_imgDescripcionTitulo title">Zuchö LH</h2>
+							<p class="Equipo_imgDescripcionTexto text">
+								Autocantor, Charrasquero y Robot
+							</p>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</article>
+	</section>
+	<script src="../JS/jquery-1.11.3.min.js"></script>
+	<script src="../JS/Smooth.js"></script>
 	</body>
 </html>

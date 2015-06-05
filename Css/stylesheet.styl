@@ -1,3 +1,13 @@
+Azul = #00ADEF
+AzulTitle = #13CFFF
+AzulNav = #00DBFF
+Nav = #1E1E1E
+
+fb = #3B5998
+vimeo = #44BBFF
+youtube = #FF2424
+
+
 @font-face {
 	font-family: 'icomoon';
 	src:url('../icons/fonts/icomoon.eot?h80yde');
@@ -55,18 +65,34 @@
 .icon
 	font-size 1.2em
 	vertical-align middle
+
+.vimeo:hover
+	color blue
 	
+
+
 html, body
 	height 100%
 	margin 0
+	font-family "Open sans" "Sans serif"
 body 
 	background #3D3D3D
 	font-size 16px
 a 
 	text-decoration none
-	
+
+//Snippets
+.title
+	font-size 1.7em
+	text-align center
+	color AzulNav
+.text
+	color #F1F1F1F1
+	margin 0 2em 0 2em
+
 .Nav
 	background #1E1E1E
+	// background rgba(0,0,0,0.5)
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.4)
 	height 3.75em
 	left 0
@@ -94,7 +120,7 @@ a
 	&_botoneraItem
 		display inline-block
 	&_botoneraItemLink
-		color #00DBFF
+		color AzulNav
 		margin -.2em
 		padding 1.4em .7em 1.07em .7em
 		text-decoration none
@@ -118,13 +144,51 @@ a
 	height 4em
 	z-index 100
 	&_contenedor
-		margin-left 36.5%
+		margin-left 37.2%
 		display inline-block
 	&_contenedorIcon
 		display inline-block
 		vertical-align middle
 	&_icon
 		font-size 1.5em
-		color #fff
-				
-		
+		line-height 1.7em
+		color #fff	
+	&_iconVimeo
+		transition all .3s ease-in-out
+		&:hover
+			color vimeo
+	&_iconYoutube
+		transition all .3s ease-in-out
+		&:hover
+			color youtube
+	&_iconFb
+		transition all .3s ease-in-out
+		&:hover
+			color fb		
+.Body
+	&_quienes
+		padding-top 3.75em
+		background rgba(0, 0, 0, 0.2)
+		height 12em
+	&_quienesTitle
+	&_quienesText 
+		text-align center
+.Equipo
+	box-shadow 0 1px 4px rgba(0, 0, 0, 0.2)		
+	background rgba(0, 0, 0, 0.1)
+	padding-top 3.75em
+	&_imgListItem
+		display inline-block
+		&:nth-child(2)
+			float right
+			margin-right 9%
+		&:nth-child(1)
+			margin-left 5%
+	&_img
+		width 320px 
+		height 320px
+		border-radius 70%
+		display inline-block
+	&_imgContenedor
+		background rgba(0, 0, 0, 0.1)	
+		padding 3em 3em 3em 3em 
