@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="Head1">
 <head>
 	<meta charset="UTF-8">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 	<title>METACINE Films</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,700,300' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="../favicon.ico" />
@@ -153,38 +153,6 @@
 						</a>	
 					</figcaption>
 				</figure>
-				<figure class="Equipo_imgContenedor">
-					<img src="Img/Equipo/zucho.jpg" alt="zucho LH" class="Equipo_img">
-					<figcaption class="Equipo_imgDescripcion">
-						<h2 class="Equipo_imgDescripcionTitulo title">Zuchö LH</h2>
-						<p class="Equipo_imgDescripcionTexto text">
-							Soy compositor de música original, empleo elementos orgánicos y digitales para conseguir sonidos que cautiven a las audiencias.
-						</p>
-						<br>
-						<a href="" class="Equipo_imgDescripcionTexto_iconFb">
-							<span class="icon-facebook"></span>
-						</a>	
-						<a href="" class="Equipo_imgDescripcionTexto_iconSc">
-							<span class="icon-soundcloud"></span>
-						</a>	
-					</figcaption>
-				</figure>
-				<figure class="Equipo_imgContenedor">
-					<img src="Img/Equipo/zucho.jpg" alt="zucho LH" class="Equipo_img">
-					<figcaption class="Equipo_imgDescripcion">
-						<h2 class="Equipo_imgDescripcionTitulo title">Zuchö LH</h2>
-						<p class="Equipo_imgDescripcionTexto text">
-							Soy compositor de música original, empleo elementos orgánicos y digitales para conseguir sonidos que cautiven a las audiencias.
-						</p>
-						<br>
-						<a href="" class="Equipo_imgDescripcionTexto_iconFb">
-							<span class="icon-facebook"></span>
-						</a>	
-						<a href="" class="Equipo_imgDescripcionTexto_iconSc">
-							<span class="icon-soundcloud"></span>
-						</a>	
-					</figcaption>
-				</figure>
 			</div>
 		</article>
 		<article id="Servicios" class="Servicios">
@@ -311,7 +279,7 @@
 	<script src="JS/hammer.min.js"></script>
 	<script>
 		var menuTrigger = document.getElementById('MenuTrigger');
-		var body = document.getElementsByTagName('body');
+		var body = document.getElementById('Head1');
 		var hiddenMenu = document.getElementById('hiddenMenu')
 		var boton = document.getElementById('boton')
 		// var boton = document.getElementsByClassName('NavMov_botonera')
@@ -328,6 +296,19 @@
 		$(boton).click( function(){
 		    $(hiddenMenu).removeClass('unhiden')
 		    $(hiddenMenu).addClass('hiden')
+		});
+
+		var sl = new Hammer(body);
+
+		sl.on('panright', function(pr){
+			$(hiddenMenu).addClass('unhiden')
+		    $(hiddenMenu).removeClass('hiden')
+		    pr.preventDefault()
+		});
+		sl.on('panleft', function(pl){
+			$(hiddenMenu).addClass('hiden')
+		    $(hiddenMenu).removeClass('unhiden')
+		    pl.preventDefault()
 		});
 	</script>
 	</body>
