@@ -2,21 +2,37 @@ Azul = #00ADEF
 AzulTitle = #13CFFF
 AzulNav = #00DBFF
 Nav = #1E1E1E
+white = #F1F1F1F1
+black = #1A1A1A
 
 Selection = #323232
 
-fb = #3B5998
+// fb = #3B5998
+// soundcloud = #ff3a00
+
+fb = #486299
 vimeo = #44BBFF
 youtube = #FF4B4B
-
+soundcloud = #FF5C2C
 
 @font-face {
+    font-family: 'm54';
+    src: url('../fonts/Logo/franklin_m54-webfont.eot');
+    src: url('../fonts/Logo/franklin_m54-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Logo/franklin_m54-webfont.woff2') format('woff2'),
+         url('../fonts/Logo/franklin_m54-webfont.woff') format('woff'),
+         url('../fonts/Logo/franklin_m54-webfont.ttf') format('truetype'),
+         url('../fonts/Logo/franklin_m54-webfont.svg#franklin_m54regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
 	font-family: 'icomoon';
-	src:url('../icons/fonts/icomoon.eot?h80yde');
-	src:url('../icons/fonts/icomoon.eot?#iefixh80yde') format('embedded-opentype'),
-		url('../icons/fonts/icomoon.woff?h80yde') format('woff'),
-		url('../icons/fonts/icomoon.ttf?h80yde') format('truetype'),
-		url('../icons/fonts/icomoon.svg?h80yde#icomoon') format('svg');
+	src:url('../Icons/icomoon.eot?7ycl0m');
+	src:url('../Icons/icomoon.eot?#iefix7ycl0m') format('embedded-opentype'),
+		url('../Icons/icomoon.ttf?7ycl0m') format('truetype'),
+		url('../Icons/icomoon.woff?7ycl0m') format('woff'),
+		url('../Icons/icomoon.svg?7ycl0m#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -44,8 +60,32 @@ youtube = #FF4B4B
 .icon-youtube:before {
 	content: "\e607";
 }
+.icon-foto:before {
+	content: "\f056";
+}
+.icon-realizacion:before {
+	content: "\f057";
+}
+.icon-globe:before {
+	content: "\f0b6";
+}
 .icon-somos:before {
 	content: "\f037";
+}
+.icon-musica:before {
+	content: "\e928";
+}
+.icon-motion4:before {
+	content: "\e99a";
+}
+.icon-rocket3:before {
+	content: "\e9a5";
+}
+.icon-menu:before {
+	content: "\e9bd";
+}
+.icon-soundcloud:before {
+	content: "\eac5";
 }
 .icon-camara:before {
 	content: "\e600";
@@ -53,14 +93,32 @@ youtube = #FF4B4B
 .icon-film:before {
 	content: "\e601";
 }
+.icon-film3:before {
+	content: "\e610";
+}
+.icon-motion2:before {
+	content: "\e611";
+}
+.icon-motion1:before {
+	content: "\e612";
+}
+.icon-motion3:before {
+	content: "\e616";
+}
 .icon-contacto1:before {
 	content: "\e602";
 }
-.icon-contacto:before {
-	content: "\e603";
-}
 .icon-lamp:before {
 	content: "\e605";
+}
+.icon-music:before {
+	content: "\e619";
+}
+.icon-edicion:before {
+	content: "\e61d";
+}
+.icon-edicion2:before {
+	content: "\e002";
 }
 
 
@@ -77,7 +135,9 @@ youtube = #FF4B4B
 
 html, body
 	height 100%
+	width 100%
 	margin 0
+	background white
 	font-family "Open sans" "Sans serif"
 
 body 
@@ -88,17 +148,85 @@ a
 ul
 	list-style none
 //Snippets
+
+.center
+	text-align center
+
 .title
 	font-size 1.7em
 	text-align center
+	line-height 16px
 	color AzulNav
 .text
-	color #F1F1F1F1
+	color white
 	margin 0 2em 0 2em
-.h3
-	color AzulNav
+	text-align justify
+.textC
+	color white
+	margin 0 2em 0 2em
 	text-align center
-
+.h3
+	color white
+	text-align center
+.hiden
+	position absolute
+	right 100%
+	transition all .3s ease
+	width 100%
+.unhiden
+	position absolute
+	right 0%
+	transition all .3s ease
+	width 100%
+.NavMov
+	background #1E1E1E
+	box-shadow 0 1px 4px rgba(0, 0, 0, 0.4)
+	height 3.75em
+	left 0
+	display none
+	margin 0
+	position fixed
+	right 0
+	top 0
+	width 100%
+	z-index 3 
+	&_menu
+		background rgba(0,0,0,0.0)
+	&_hidden
+		background white
+		padding 1em 0 1em 0
+		margin-top 1em
+		width 100%
+	&_logo
+		text-align center
+		letter-spacing 2px
+		font-family "m54"
+		line-height 0
+		color white 
+		margin .4em 0 0 0
+		text-align center
+	&_logoLink
+		color white
+	&_botonera
+		cursor pointer 
+		font-family 'Open Sans', 'Sans serif', Arial 
+		text-align center
+		font-size 1.5em
+	&_botoneraItem
+		margin-left -2em
+		padding-top 18px
+		padding-bottom 18px
+		padding 0 auto
+		// padding-bottom 18px
+		// margin-bottom 1em
+		&:hover
+			background rgba(0,0,0,0.3)
+			color #fff
+	&_botoneraItemLink
+		padding .5em 24% .5em 24%
+		color AzulNav
+		text-decoration none
+		transition all 0.2s ease-in-out
 .Nav
 	background #1E1E1E
 	// background rgba(0,0,0,0.5)
@@ -111,14 +239,20 @@ ul
 	width 100%
 	z-index 3 
 	&_logo
-		display inline-block
 		// margin-left 7%
-		margin-left 6em
-		margin-right 0
-		vertical-align middle
-	&_logoImg
-		width 200px
-		height 34px 
+		// margin-left 6em
+		// margin-right 0
+		// vertical-align middle
+		display inline-block
+		letter-spacing 2px
+		// vertical-align middle
+		font-family "m54"
+		line-height 0
+		color white 
+		margin 1em 0 0 2em
+		text-align center
+	&_logoLink
+		color white
 	&_botonera
 		cursor pointer 
 		display inline-block
@@ -129,100 +263,150 @@ ul
 	&_botoneraItem
 		display inline-block
 	&_botoneraItemLink
+		display inline-block
+		// line-height 0px
+		vertical-align top
+		margin-top -27px
 		color AzulNav
-		margin -.2em
+		// margin -.2em
 		padding 1.4em .7em 1.07em .7em
 		text-decoration none
 		transition all 0.2s ease-in-out
 		&:hover
 			background rgba(0,0,0,0.3)
 			color #fff
-
+	&_icon
+		display inline-block
 .Metareel
 	height 85%
 	width 100%
+	// margin-left 7%
 	&_video
 		height 100%
 		margin-top 3.7em
 		width 100%
 .Socialbar
 	background #1E1E1E
-	// box-shadow 0 1px 4px rgba(0, 0, 0, 0.4)
+	box-shadow 0 1px 4px rgba(0, 0, 0, 0.4)
 	width 100%
-	margin-top 4.5%
-	height 4em
+	margin-top 3.69em
+	height 2.4em
 	z-index 100
 	&_contenedor
-		margin-left 37.2%
-		display inline-block
+		text-align center
 	&_contenedorIcon
 		display inline-block
 		vertical-align middle
 	&_icon
 		font-size 1.5em
-		line-height 1.7em
+		line-height 0em
 		color #fff	
 	&_iconVimeo
-		transition all .3s ease-in-out
+		transition all .2s ease-in-out
 		&:hover
 			color vimeo
 	&_iconYoutube
-		transition all .3s ease-in-out
+		transition all .2s ease-in-out
 		&:hover
 			color youtube
 	&_iconFb
-		transition all .3s ease-in-out
+		transition all .2s ease-in-out
 		&:hover
 			color fb		
 .Body
+	width 100%
 	&_quienes
 		box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
 		padding-top 3.75em
-		background rgba(0, 0, 0, 0.2)
-		height 12em
+		padding-bottom 3em
+		background rgba(0, 0, 0, 0.4)
+		width 100%
 	&_quienesTitle
 	&_quienesText 
 		text-align center
 .Equipo
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
-	background rgba(0, 0, 0, 0.3)
+	padding-bottom 3em
+	background rgba(0, 0, 0, 0.5)
 	padding-top 3.75em
-	&_imgList
-		margin-bottom 0px
-	&_imgListItem
-		display inline-block
-		&:nth-child(2)
-			float right
-			margin-right 9%
-		&:nth-child(1)
-			margin-left 5%
-	&_img
-		width 320px 
-		height 320px
-		border-radius 70%
-		display inline-block
+	width 100%
+	&_text
+		margin-bottom 2em
+	&_contenedor
+		// margin-left 3.3em
+		text-align center
 	&_imgContenedor
-		background rgba(0, 0, 0, 0.1)	
-		padding 3em 3em 3em 3em 
-		margin-bottom 2.5em
-		
+		text-align center
+		display inline-block
+		background rgba(0, 0, 0, 0.3)	
+		width 345px
+		height 457px
+		padding 1.5em .5em 1em .5em 
+		// margin 2.3em 2em 2.2em 2em
+	&_img
+		width 220px 
+		box-shadow 0 1px 4px rgba(0, 0, 0, 0.2)		
+		height 220px
+		border-radius 50%
+	&_imgDescripcionTitulo
+		line-height 12px
+	&_imgDescripcionTexto
+		line-height 1.3
+		text-align justify
+		&_iconFb
+			color fb	
+			font-size 2em
+			&:hover
+				color AzulNav
+		&_iconYt
+			color youtube	
+			font-size 2em
+			&:hover
+				color AzulNav
+		&_iconSc
+			color soundcloud
+			font-size 2em
+			&:hover
+				color AzulNav
 .Servicios
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
-	background rgba(0, 0, 0, 0.2)	
+	background rgba(0, 0, 0, 0.5)	
 	padding-top 3.37em
-	height 100%
+	width 100%
+	&_icon
+		font-size 5.5em
+		color AzulTitle
+		vertical-align top
+	&_contenedorImgs
+		text-align center
+		margin-top 1em
+	&_contenedorImg
+		display inline-block
+		text-align center
+		margin 1.5em 2em 2em 2em
+	&_imgText
+		color white
+		text-align center
+		font-weight bold
+		font-size 1.1em
 	
 .Producciones
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
 	padding-top 3.37em
-	background rgba(0, 0, 0, 0.3)	
+	width 100%
+	background rgba(0, 0, 0, 0.5)	
+	width 100%
+	&_galeria
+		text-align center
+	&_galeriaList
+		padding 0
 	&_titulo
 		// margin-bottom 1.5em
 	&_galeriaListItem
 		display inline-block
 		margin-bottom 1em
 	&_invite
-		color #FFF
+		color white
 		padding-bottom 2em
 	&_inviteYoutubeLink
 		color youtube
@@ -232,9 +416,82 @@ ul
 		color vimeo
 		&:hover
 			color AzulNav
+	&_galeriaContenedorVideo
+		width 100%
+	&_Producciones_galeriaVideo
+		max-width 100%
 .Toñovid
 	margin-left 4px
 
 .Marginrightvid
-	margin-right 4.7%
-	margin-left .8%
+	margin-right 1em
+	// margin-left 4.5em
+
+.Contacto
+	margin-top -1em
+	padding-top 3em
+	box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
+	padding-bottom 3em
+	width 100%
+	background rgba(0,0,0,0.7)
+	&_linksBg
+		margin-top 2.5	em
+	&_titulo
+		color white
+	&_text
+		background white
+		color #E3E3E3
+		font-weight bold
+		font-size .2em
+		
+	&_emailLink
+		color AzulNav
+		&:hover
+			color AzulNav
+	&_fbLink
+		color fb
+		&:hover
+			color AzulNav
+	&_ytLink
+		color youtube
+		&:hover
+			color AzulNav
+	&_vimLink
+		color vimeo
+		&:hover
+			color AzulNav
+	&_ciudad
+		font-weight 200
+		margin-top 2em
+		font-size 1.3em
+	&_datos
+		line-height 0
+		font-size 1.4em
+		color AzulNav
+		margin-bottom 1.4em
+	&_datosTxt
+		margin-top 1.2em
+		font-size 1.3em
+		font-weight 200
+.Footer
+	background rgba(0,0,0,0.9)
+	width 100%
+	&_text
+		padding 3em 0 3em 0 
+		font-weight 200
+@media screen and (max-width:1140px)
+	.NavMov
+		display inherit
+	.Nav
+		display none
+	.Producciones
+		width 100%
+		height 500px
+		&_titulo
+			margin-top 50%
+		&_galeria
+			display none	
+	.Equipo
+		&_imgContenedor
+			width 300px
+			margin 1.4em 0 1.4em 0 

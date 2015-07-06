@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>METACINE Films</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,700,300' rel='stylesheet' type='text/css'>
@@ -12,38 +13,77 @@
 <body id="Head">
 	<header class="Header">
 		<nav class="Nav" role="navigation">
-			<figure class="Nav_logo">
+<!-- 			<figure class="Nav_logo">
 				<a href="#Head" class="Nav_logoImgLink">
 					<img src="../img/logoB.png" alt="Logo de Metacine films" class="Nav_logoImg">
 				</a>
-			</figure>		
-				<ul class="Nav_botonera">
-					<li class="Nav_botoneraItem">
-						<a href="#QuienesSomos" class="Nav_botoneraItemLink smooth">
-							Quienes somos
-						</a>
-					</li>
-					<li class="Nav_botoneraItem">
-						<a href="#Equipo" class="Nav_botoneraItemLink">
-							<span class="icon icon-somos"></span> Equipo
-						</a>
-					</li>
-					<li class="Nav_botoneraItem">
-						<a href="#Servicios" class="Nav_botoneraItemLink">
-							<span class="icon icon-camara"></span> Servicios
-						</a>
-					</li>
-					<li class="Nav_botoneraItem">
-						<a href="#Producciones" class="Nav_botoneraItemLink">
-							<span class="icon icon-film"></span> Producciones
-						</a>
-					</li>
-					<li class="Nav_botoneraItem">
-						<a href="#Contacto" class="Nav_botoneraItemLink">
-							<span class="icon icon-contacto1"></span> Contacto
-						</a>
-					</li>
-				</ul>	
+			</figure>	 -->
+			<h1 class="Nav_logo">
+				<a class="Nav_logoLink" href="#Head">METACINE</a>
+			</h1>
+			<ul class="Nav_botonera">
+				<li class="Nav_botoneraItem">
+					<a href="#QuienesSomos" class="Nav_botoneraItemLink smooth">
+						Quienes somos
+					</a>
+				</li>
+				<li class="Nav_botoneraItem">
+					<a href="#Equipo" class="Nav_botoneraItemLink">
+						<span class="Nav_icon icon icon-somos"></span> Equipo
+					</a>
+				</li>
+				<li class="Nav_botoneraItem">
+					<a href="#Servicios" class="Nav_botoneraItemLink">
+						<span class="Nav_icon icon icon-camara"></span> Servicios
+					</a>
+				</li>
+				<li class="Nav_botoneraItem">
+					<a href="#Producciones" class="Nav_botoneraItemLink">
+						<span class="Nav_icon icon icon-film"></span> Producciones
+					</a>
+				</li>
+				<li class="Nav_botoneraItem">
+					<a href="#Contacto" class="Nav_botoneraItemLink">
+						<span class="Nav_icon icon icon-contacto1"></span> Contacto
+					</a>
+				</li>
+			</ul>	
+		</nav>
+<nav class="NavMov" role="navigation">
+				<h1 class="NavMov_logo">
+					<a class="NavMov_logoLink" href="#Head">METACINE</a>
+					<span id="MenuTrigger" class="NavMov_menu icon-menu"></span>	
+				</h1>
+				
+				<div class="NavMov_hidden hiden" id="hiddenMenu">
+					<ul class="NavMov_botonera" id="boton">
+						<li class="NavMov_botoneraItem">
+							<a href="#QuienesSomos" class="NavMov_botoneraItemLink smooth">
+								Quienes somos
+							</a>
+						</li>
+						<li class="NavMov_botoneraItem">
+							<a href="#Equipo" class="NavMov_botoneraItemLink">
+ 								<span class="icon icon-somos"></span> Equipo
+							</a>
+						</li>
+						<li class="NavMov_botoneraItem">
+							<a href="#Servicios" class="NavMov_botoneraItemLink">
+								<span class="icon icon-camara"></span> Servicios
+							</a>
+						</li>
+						<li class="NavMov_botoneraItem">
+							<a href="#Producciones" class="NavMov_botoneraItemLink">
+								<span class="icon icon-film"></span> Producciones
+							</a>
+						</li>
+						<li class="NavMov_botoneraItem">
+							<a href="#Contacto" class="NavMov_botoneraItemLink">
+								<span class="icon icon-contacto1"></span> Contacto
+							</a>
+						</li>
+					</ul>	
+				</div>
 		</nav>
 	</header>
 	<section class="Metareel">
@@ -76,67 +116,113 @@
 			</p>
 		</article>
 		<article id="Equipo" class="Equipo">
-			<h2 class="Equipo_title title">El equipo</h2>
+			<h2 class="Equipo_title title">Equipo</h2>
 			<p class="Equipo_text text text">
 				Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
 			</p>
-			<ul class="Equipo_imgList">
-				<li class="Equipo_imgListItem">
-					<figure class="Equipo_imgContenedor Equipo_imgContenedorMk">
-						<img src="../Img/Equipo/Marco.jpg" alt="Marco Agredo" class="Equipo_img">
-						<figcaption class="Equipo_imgDescripcion">
-							<h2 class="Equipo_imgDescripcionTitulo title">Marco Agredo</h2>
-							<p class="Equipo_imgDescripcionTexto text">
-								Director, Licantropo y Sueñicultor
-							</p>
-						</figcaption>
-					</figure>
-				</li>
-				<li class="Equipo_imgListItem">
-					<figure class="Equipo_imgContenedor">
-						<img src="../Img/Equipo/zucho.jpg" alt="zucho LH" class="Equipo_img">
-						<figcaption class="Equipo_imgDescripcion">
-							<h2 class="Equipo_imgDescripcionTitulo title">Zuchö LH</h2>
-							<p class="Equipo_imgDescripcionTexto text">
-								Autocantor, Charrasquero y Robot
-							</p>
-						</figcaption>
-					</figure>
-				</li>
-			</ul>
+			<div class="Equipo_contenedor">
+				<figure class="Equipo_imgContenedor Equipo_imgContenedorMk">
+					<img src="../Img/Equipo/Marco.jpg" alt="Marco Agredo" class="Equipo_img">
+					<figcaption class="Equipo_imgDescripcion">
+						<h2 class="Equipo_imgDescripcionTitulo title">Marco Agredo</h2>
+						<p class="Equipo_imgDescripcionTexto text">
+							Soy compositor de música original, empleo elementos orgánicos y digitales para conseguir sonidos que cautiven a las audiencias.
+						</p>
+						<br>
+						<a href="" class="Equipo_imgDescripcionTexto_iconFb">
+							<span class="icon-facebook"></span>
+						</a>	
+						<a href="" class="Equipo_imgDescripcionTexto_iconYt">
+							<span class="icon-youtube"></span>
+						</a>
+					</figcaption>
+				</figure>
+				<figure class="Equipo_imgContenedor">
+					<img src="../Img/Equipo/zucho.jpg" alt="zucho LH" class="Equipo_img">
+					<figcaption class="Equipo_imgDescripcion">
+						<h2 class="Equipo_imgDescripcionTitulo title">Zuchö LH</h2>
+						<p class="Equipo_imgDescripcionTexto text">
+							Soy compositor de música original, empleo elementos orgánicos y digitales para conseguir sonidos que cautiven a las audiencias.
+						</p>
+						<br>
+						<a href="" class="Equipo_imgDescripcionTexto_iconFb">
+							<span class="icon-facebook"></span>
+						</a>	
+						<a href="" class="Equipo_imgDescripcionTexto_iconSc">
+							<span class="icon-soundcloud"></span>
+						</a>	
+					</figcaption>
+				</figure>
+				<figure class="Equipo_imgContenedor">
+					<img src="../Img/Equipo/zucho.jpg" alt="zucho LH" class="Equipo_img">
+					<figcaption class="Equipo_imgDescripcion">
+						<h2 class="Equipo_imgDescripcionTitulo title">Zuchö LH</h2>
+						<p class="Equipo_imgDescripcionTexto text">
+							Soy compositor de música original, empleo elementos orgánicos y digitales para conseguir sonidos que cautiven a las audiencias.
+						</p>
+						<br>
+						<a href="" class="Equipo_imgDescripcionTexto_iconFb">
+							<span class="icon-facebook"></span>
+						</a>	
+						<a href="" class="Equipo_imgDescripcionTexto_iconSc">
+							<span class="icon-soundcloud"></span>
+						</a>	
+					</figcaption>
+				</figure>
+				<figure class="Equipo_imgContenedor">
+					<img src="../Img/Equipo/zucho.jpg" alt="zucho LH" class="Equipo_img">
+					<figcaption class="Equipo_imgDescripcion">
+						<h2 class="Equipo_imgDescripcionTitulo title">Zuchö LH</h2>
+						<p class="Equipo_imgDescripcionTexto text">
+							Soy compositor de música original, empleo elementos orgánicos y digitales para conseguir sonidos que cautiven a las audiencias.
+						</p>
+						<br>
+						<a href="" class="Equipo_imgDescripcionTexto_iconFb">
+							<span class="icon-facebook"></span>
+						</a>	
+						<a href="" class="Equipo_imgDescripcionTexto_iconSc">
+							<span class="icon-soundcloud"></span>
+						</a>	
+					</figcaption>
+				</figure>
+			</div>
 		</article>
 		<article id="Servicios" class="Servicios">
 			<h2 class="Servicios_title title">Servicios</h2>
 			<p class="Servicios_text text text">
 				Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.
 			</p>
-			<div class="Servicios_Galeria">
-				<ul class="Servicios_imgList">
-					<li class="Servicios_imgListItem">
-						<figure class="Servicios_imgContenedor Servicios_imgContenedorMk">
-							<img src="../Img/Servicios/Marco.jpg" alt="Marco Agredo" class="Servicios_img">
-							<figcaption class="Servicios_imgDescripcion">
-								<h2 class="Servicios_imgDescripcionTitulo title">
-
-								</h2>
-								<p class="Servicios_imgDescripcionTexto text">
-									
-								</p>
-							</figcaption>
-						</figure>
-					</li>
-					<li class="Servicios_imgListItem">
-						<figure class="Servicios_imgContenedor">
-							<img src="../Img/Servicios/zucho.jpg" alt="zucho LH" class="Servicios_img">
-							<figcaption class="Servicios_imgDescripcion">
-								<h2 class="Servicios_imgDescripcionTitulo title"></h2>
-								<p class="Servicios_imgDescripcionTexto text">
-									
-								</p>
-							</figcaption>
-						</figure>
-					</li>
-				</ul>
+			<div class="Servicios_contenedorImgs">
+				<figure class="Servicios_contenedorImg">
+					<span class="Servicios_icon icon-realizacion"></span>
+					<figcaption class="Servicios_imgTextContenedor">
+						<h3 class="Servicios_imgText">Realización<br>Audiovisual</h3>		
+					</figcaption>
+				</figure>
+				<figure class="Servicios_contenedorImg">
+					<span class="Servicios_icon icon-musica"></span>
+					<figcaption class="Servicios_imgText">
+						<h3 class="Servicios_imgText">Musica Original</h3>
+					</figcaption>
+				</figure>
+				<figure class="Servicios_contenedorImg">
+					<span class="Servicios_icon icon-motion1"></span>
+					<figcaption class="Servicios_imgText">
+						<h3 class="Servicios_imgText">Motion Graphics</h3>				
+					</figcaption>
+				</figure>
+				<figure class="Servicios_contenedorImg">
+					<span class="Servicios_icon icon-foto"></span>
+					<figcaption class="Servicios_imgText">
+						<h3 class="Servicios_imgText">Fotografía</h3>				
+					</figcaption>
+				</figure>
+				<figure class="Servicios_contenedorImg">
+					<span class="Servicios_icon icon-edicion"></span>
+					<figcaption class="Servicios_imgText">
+						<h3 class="Servicios_imgText">Edición<br>de audio y video</h3>				
+					</figcaption>
+				</figure>
 			</div>
 		</article>
 		<article id="Producciones" class="Producciones">
@@ -154,21 +240,95 @@
 			<div class="Producciones_galeria">
 				<ul class="Producciones_galeriaList">
 					<li class="Producciones_galeriaListItem Marginrightvid">
-						<iframe class="Producciones_galeriaVideo " src="https://player.vimeo.com/video/123166312" width="550" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<div class="Producciones_galeriaContenedorVideo">
+							<iframe class="Producciones_galeriaVideo " src="https://player.vimeo.com/video/123166312" width="550" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						</div>
 					<li class="Producciones_galeriaListItem">
-						<iframe class="Toñovid" src="https://player.vimeo.com/video/125635890" width="550" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<div class="Producciones_galeriaContenedorVideo">
+							<iframe class="Producciones_galeriaVideo Toñovid" src="https://player.vimeo.com/video/125635890" width="550" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						</div>						
 					</li>
 					<li class="Producciones_galeriaListItem Marginrightvid">
-						<iframe class="Producciones_galeriaVideo " src="https://player.vimeo.com/video/126693945" width="550" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+						<div class="Producciones_galeriaContenedorVideo">
+							<iframe class="Producciones_galeriaVideo " src="https://player.vimeo.com/video/126693945" width="550" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+						</div>						
 					</li>
 					<li class="Producciones_galeriaListItem">
-						<iframe class="Producciones_galeriaVideo" src="https://player.vimeo.com/video/115087250" width="550" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						<div class="Producciones_galeriaContenedorVideo">
+							<iframe class="Producciones_galeriaVideo" src="https://player.vimeo.com/video/115087250" width="550" height="320" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+						</div>
 					</li>
 				</ul>
 			</div>
 		</article>
+		<article id="Contacto" class="Contacto">
+			<h2 class="Contacto_titulo title">Contacto</h2>
+			<p class="Contacto_text text center">
+				En METACINE queremos cumplir tus deseos audiovisuales, no sé... piensalo... (͡ ͡° ͜ ʖ ͡ ͡°)
+			</p>
+			<div class="Contacto_linksBg">
+				<!-- <h3 class="Contacto_email h3">Escribenos a: <br><span class="Contacto_emailLink">contacto@metacinefilms.com</span></h3> -->
+<!-- 				<h3 class="Contacto_email h3">
+					Marco Agredo, Director: <br>
+					<span class="Contacto_emailLink">(+57)321-098-7654</span>
+				</h3> -->
+<!-- 				<h3 class="Contacto_social h3">
+					Nos encuentras en: <br>
+					<a target="blank_" href="https://www.facebook.com/metacine.estudio?fref=ts"  class="Contacto_fbLink">
+						Facebook
+					</a> - 
+					<a target="blank_" href="https://www.youtube.com/channel/UCr0U4CUTq1UqXMXNksbtalQ" class="Contacto_ytLink">
+						Youtube
+					</a> - 
+					<a target="blank_" href="https://vimeo.com/user33108727/videos" class="Contacto_vimLink">
+						Vimeo
+					</a>
+				</h3> -->
+				<p class="Contacto_datosTxt textC">Escribenos:</p>
+				<h3 class="Contacto_datos h3">contacto@metacinefilms.com</h3>
+				<p class="Contacto_datosTxt textC">Nos encuentras en:</p>
+				<h3 class="Contacto_datos h3">
+					<a target="blank_" href="https://www.facebook.com/metacine.estudio?fref=ts"  class="Contacto_fbLink">
+						Facebook
+					</a> - 
+					<a target="blank_" href="https://www.youtube.com/channel/UCr0U4CUTq1UqXMXNksbtalQ" class="Contacto_ytLink">
+						Youtube
+					</a> - 
+					<a target="blank_" href="https://vimeo.com/user33108727/videos" class="Contacto_vimLink">
+						Vimeo
+					</a>
+				</h3>
+				<p class="Contacto_ciudad textC">Popayán - Cauca - Colombia</p>
+
+			</div>
+		</article>
+		<footer class="Footer">	
+				<p class="Footer_text textC">METACINE Films - 2015</p>
+		</footer>
 	</section>
-	<script src="../JS/jquery-1.11.3.min.js"></script>
-	<script src="../JS/Smooth.js"></script>
+	<script src="JS/jquery-1.11.3.min.js"></script>
+	<script src="JS/Smooth.js"></script>
+	<script src="JS/hammer.min.js"></script>
+	<script>
+		var menuTrigger = document.getElementById('MenuTrigger');
+		var body = document.getElementsByTagName('body');
+		var hiddenMenu = document.getElementById('hiddenMenu')
+		var boton = document.getElementById('boton')
+		// var boton = document.getElementsByClassName('NavMov_botonera')
+		// create a simple instance
+		// by default, it only adds horizontal recognizers
+		var mc = new Hammer(MenuTrigger);
+		// listen to events...
+		mc.on("tap press click", function(ev) {
+		    $(hiddenMenu).toggleClass('hiden')
+		    $(hiddenMenu).toggleClass('unhiden')
+		    // ev.preventDefault();
+		});
+
+		$(boton).click( function(){
+		    $(hiddenMenu).removeClass('unhiden')
+		    $(hiddenMenu).addClass('hiden')
+		});
+	</script>
 	</body>
 </html>
