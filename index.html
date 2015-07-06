@@ -297,19 +297,6 @@
 		    $(hiddenMenu).removeClass('unhiden')
 		    $(hiddenMenu).addClass('hiden')
 		});
-
-		var sl = new Hammer(body);
-
-		sl.on('panright', function(pr){
-			$(hiddenMenu).addClass('unhiden')
-		    $(hiddenMenu).removeClass('hiden')
-		    pr.preventDefault()
-		});
-		sl.on('panleft', function(pl){
-			$(hiddenMenu).addClass('hiden')
-		    $(hiddenMenu).removeClass('unhiden')
-		    pl.preventDefault()
-		});
 	</script>
 	</body>
 </html>
