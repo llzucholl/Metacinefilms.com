@@ -1,5 +1,6 @@
 Azul = #00ADEF
 AzulTitle = #13CFFF
+AzulBg = #558FAD
 AzulNav = #00DBFF
 Nav = #1E1E1E
 white = #F1F1F1F1
@@ -160,7 +161,7 @@ ul
 .text
 	color white
 	margin 0 2em 0 2em
-	text-align justify
+	text-align left
 .textC
 	color white
 	margin 0 2em 0 2em
@@ -179,7 +180,8 @@ ul
 	transition all .3s ease
 	width 100%
 .NavMov
-	background #1E1E1E
+	// background #1E1E1E
+	background rgba(0,0,0,0.7)
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.4)
 	height 3.75em
 	left 0
@@ -228,8 +230,8 @@ ul
 		text-decoration none
 		transition all 0.2s ease-in-out
 .Nav
-	background #1E1E1E
-	// background rgba(0,0,0,0.5)
+	// background #1E1E1E
+	background rgba(0,0,0,0.7)
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.4)
 	height 3.75em
 	left 0
@@ -315,20 +317,28 @@ ul
 			color fb		
 .Body
 	width 100%
+	// background url('../Img/bg.jpg') no-repeat
+	// background-size 100%
+	// background-repeat repeat-Y
+	background AzulBg
 	&_quienes
 		box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
 		padding-top 3.75em
 		padding-bottom 3em
 		background rgba(0, 0, 0, 0.4)
+		background url('../Img/equipobgblur.jpg')
+		background-size cover
 		width 100%
+		background-attachment fixed
 	&_quienesTitle
 	&_quienesText 
 		text-align center
 .Equipo
-	box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
+	box-shadow 0 1px 4px rgba(0, 0, 0, 0.4)		
 	padding-bottom 3em
-	background rgba(0, 0, 0, 0.5)
 	padding-top 3.75em
+	background-size cover
+	background rgba(0, 0, 0, .4)
 	width 100%
 	&_text
 		margin-bottom 2em
@@ -338,7 +348,7 @@ ul
 	&_imgContenedor
 		text-align center
 		display inline-block
-		background rgba(0, 0, 0, 0.3)	
+		background rgba(48, 0, 0, 0.3)	
 		width 345px
 		height 457px
 		padding 1.5em .5em 1em .5em 
@@ -370,12 +380,17 @@ ul
 				color AzulNav
 .Servicios
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
-	background rgba(0, 0, 0, 0.5)	
+	// background rgba(0, 0, 0, 0.7)
+	background #FFF4BD
 	padding-top 3.37em
 	width 100%
+	min-height 500px
+	&_text
+		color black
 	&_icon
 		font-size 5.5em
 		color AzulTitle
+		// vertical-align top
 		vertical-align top
 	&_contenedorImgs
 		text-align center
@@ -385,17 +400,21 @@ ul
 		text-align center
 		margin 1.5em 2em 2em 2em
 	&_imgText
-		color white
+		color black
 		text-align center
-		font-weight bold
+		// font-weight bold
 		font-size 1.1em
-	
+	&_imgList
+		text-align center
+		padding 0
 .Producciones
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
 	padding-top 3.37em
+	// background rgba(0, 0, 0, 0.5)	
 	width 100%
-	background rgba(0, 0, 0, 0.5)	
-	width 100%
+	background url('../Img/bg.jpg') no-repeat
+	background-size cover
+	background-attachment fixed
 	&_galeria
 		text-align center
 	&_galeriaList
@@ -495,3 +514,5 @@ ul
 		&_imgContenedor
 			width 300px
 			margin 1.4em 0 1.4em 0 
+	.Body
+		background AzulBg
