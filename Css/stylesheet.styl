@@ -31,11 +31,11 @@ flickr = #F1F1F1F1
 }
 @font-face {
 	font-family: 'icomoon';
-	src:url('../Icons/icomoon.eot?ah29xv');
-	src:url('../Icons/icomoon.eot?#iefixah29xv') format('embedded-opentype'),
-		url('../Icons/icomoon.ttf?ah29xv') format('truetype'),
-		url('../Icons/icomoon.woff?ah29xv') format('woff'),
-		url('../Icons/icomoon.svg?ah29xv#icomoon') format('svg');
+	src:url('../Icons/icomoon.eot?1l38o3');
+	src:url('../Icons/icomoon.eot?#iefix1l38o3') format('embedded-opentype'),
+		url('../Icons/icomoon.ttf?1l38o3') format('truetype'),
+		url('../Icons/icomoon.woff?1l38o3') format('woff'),
+		url('../Icons/icomoon.svg?1l38o3#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -54,6 +54,15 @@ flickr = #F1F1F1F1
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-flecha2:before {
+	content: "\e609";
+}
+.icon-flecha1:before {
+	content: "\e60a";
+}
+.icon-flecha3:before {
+	content: "\e60b";
+}
 .icon-forward:before {
 	content: "\e608";
 }
@@ -306,7 +315,7 @@ ul
 		width 100%
 .Socialbar
 	// background #1E1E1E
-	background #192A33
+	background #1A2C36
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.4)
 	width 100%
 	margin-top 3.69em
@@ -358,9 +367,11 @@ ul
 		text-align justify
 .Equipo
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.4)		
-	padding-bottom 3em
-	padding-top 4em
 	background rgba(0, 0, 0, .6)
+	&_bg2
+		background rgba(0,0,0,0.2)
+		padding-bottom 3em
+		padding-top 4em
 	&_text
 		margin-bottom 2em
 		text-align justify
@@ -380,7 +391,7 @@ ul
 		// margin 1.4em 0 1.4em 0 
 	&_img
 		width 220px 
-		box-shadow 0 1px 4px rgba(0, 0, 0, 0.2)		
+		box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5);	
 		height 220px
 		border-radius 50%
 	&_imgDescripcionTitulo
@@ -463,32 +474,41 @@ ul
 		border-radius 50%
 .Producciones
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
-	padding-top 3.37em
-	padding-bottom 1em
+	// padding-top 3.37em
+	// padding-bottom 1em
 	// background rgba(0, 0, 0, 0.5)	
 	width 100%
 	background url('../Img/bg2.jpg') no-repeat
 	background-size cover
 	background-attachment fixed
+	&_bg2
+		background rgba(0,0,0,0.5)
+		padding-top 3.5em
+		padding-bottom 1em		
 	&_galeria
 		text-align center
 	&_galeriaList
 		padding 0
 	&_titulo
-		// margin-bottom 1.5em
+		margin-top 1em
+		margin-bottom -.2em
 	&_galeriaListItem
 		display inline-block
 		margin-bottom 1em
 	&_invite
 		color white
+		font-weight 100
+		font-size 1.5em
 		padding-bottom 2em
 	&_inviteYoutubeLink
 		color youtube
+		font-weight 700
 		font-size 1.2em
 		&:hover
 			color AzulNav
 	&_inviteVimeoLink
 		color vimeo
+		font-weight 700
 		font-size 1.2em
 		&:hover
 			color AzulNav
@@ -503,7 +523,7 @@ ul
 	margin-right 1em
 	// margin-left 4.5em
 .Contacto
-	padding-top 6em
+	padding-top 5em
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
 	padding-bottom 2em
 	width 100%
@@ -524,14 +544,20 @@ ul
 			color AzulNav
 	&_fbLink
 		color fb
+		font-weight 700
+		font-size 1.3em
 		&:hover
 			color AzulNav
 	&_ytLink
 		color youtube
+		font-weight 700
+		font-size 1.3em
 		&:hover
 			color AzulNav
 	&_vimLink
 		color vimeo
+		font-weight 700
+		font-size 1.3em
 		&:hover
 			color AzulNav
 	&_ciudad
@@ -540,12 +566,13 @@ ul
 		font-size 1.3em
 	&_datos
 		line-height 0
-		font-size 1.4em
+		font-size 1.7em
 		color AzulNav
 		margin-bottom 1.4em
 	&_datos2
 		line-height 0
 		font-size 1.4em
+		font-weight 100
 		color white
 		margin-bottom 1.4em
 	&_datosTxt
@@ -562,6 +589,16 @@ ul
 		height 35px
 		border-radius 50%
 		font-weight 200
+	&_irArriba
+		text-align right
+		float right
+	&_irArribaLink
+		line-height 1
+		font-size 1.5em
+		color white
+		&:hover
+			color AzulNav 
+			text-decoration underline
 .Footer
 	background rgba(0,0,0,0.9)
 	width 100%
@@ -594,7 +631,9 @@ ul
 	.Equipo
 		
 		&_imgContenedor
-			width 300px
+			width 100%
+			padding 2em 0em 1em 0em 
+			box-shadow none
 			height 490px
 			margin 1.4em 0 1.4em 0 
 	.Body
@@ -604,6 +643,18 @@ ul
 		background #FFF9DD
 		&_text
 			color black
+	.Contacto
+		&_datos
+			line-height 0
+			font-size 1.2em
+			color AzulNav
+			margin-bottom 1.4em
+		&_datos2
+			line-height 0
+			font-size 1em
+			font-weight 100
+			color white
+			margin-bottom 1.4em
 @media screen and (min-width:1500px)
 	.Socialbar
 		height 4em
