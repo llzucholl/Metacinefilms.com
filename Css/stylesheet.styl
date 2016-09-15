@@ -271,7 +271,6 @@ ul
 		cursor pointer 
 		display inline-block
 		// margin-left 2%
-		
 		margin-right 1.2em
 		padding-left 0
 		font-family 'Open Sans', 'Sans serif', Arial 
@@ -282,14 +281,14 @@ ul
 		display inline-block
 		vertical-align top
 		margin-top -18px
-		color AzulNav
+		color #FFF
 		padding 1.75em .7em 2em .8em
 		text-decoration none
 		transition all 0.2s ease-in-out
 		&:hover
 			background rgba(0,0,0,0.3)
 			font-size 1em
-			color #fff
+			color AzulNav
 	&_icon
 		display inline-block
 	&_botoneraItemId
@@ -320,7 +319,7 @@ ul
 	background #1A2C36
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.4)
 	width 100%
-	margin-top 3.69em
+	margin-top 0em
 	height 2.5em
 	z-index 1
 	&_contenedor
@@ -356,8 +355,8 @@ ul
 		padding-bottom 2.2em
 	&_quienes
 		box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
-		padding-top 3.60em
-		padding-bottom 3em
+		padding-top 5em
+		padding-bottom 5em
 		background rgba(0, 0, 0, 0.4)
 		background url('../Img/equipobgblur.jpg')
 		background-size cover
@@ -370,14 +369,99 @@ ul
 		// margin-left auto
 		// margin-right auto
 		text-align center
+.Servicios
+	box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
+	// background rgba(0, 0, 0, 0.7)
+	background #FFF4BD
+	padding-top 5em
+	width 100%
+	min-height 500px
+	&_text
+		color black
+		text-align center
+	&_icon
+		font-size 5.5em
+		color AzulTitle
+		// vertical-align top
+		vertical-align top
+	&_contenedorImgs
+		text-align center
+		margin-top 1em
+	&_contenedorImg
+		display inline-block
+		text-align center
+		margin 1.5em 2em 2em 2em
+	&_imgText
+		color black
+		text-align center
+		// font-weight bold
+		font-size 1.1em
+	&_imgList
+		text-align left
+		font-size .9em
+		padding 0
+	&_imgListItemFlag
+		width 35px
+		height 35px
+		border-radius 50%
+.Producciones
+	box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
+	// padding-top 3.7em
+	// padding-bottom 1em
+	// background rgba(0, 0, 0, 0.5)	
+	width 100%
+	background url('../Img/bg2.jpg') no-repeat
+	background-size cover
+	background-attachment fixed
+	&_bg2
+		background rgba(0,0,0,0.5)
+		padding-top 5em
+		padding-bottom 1em		
+	&_galeria
+		text-align center
+	&_galeriaList
+		padding 0
+	&_titulo
+		margin-top 1em
+		margin-bottom -.2em
+	&_galeriaListItem
+		display inline-block
+		margin-bottom 1em
+	&_invite
+		color white
+		font-weight 100
+		font-size 1.5em
+		padding-bottom 2em
+	&_inviteYoutubeLink
+		color youtube
+		font-weight 700
+		font-size 1.2em
+		&:hover
+			color AzulNav
+	&_inviteVimeoLink
+		color vimeo
+		font-weight 700
+		font-size 1.2em
+		&:hover
+			color AzulNav
+	&_galeriaContenedorVideo
+		width 100%
+	&_Producciones_galeriaVideo
+		max-width 100%
+.Toñovid
+	margin-left 5px
+
+.Marginrightvid
+	margin-right 1em
+	// margin-left 4.5em
 .Equipo
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.4)		
 	background rgba(0, 0, 0, .6)
 	&_bg2
 		background #444
-		background url('../Img/textura.jpeg')
+		// background url('../Img/textura.jpeg')
 		padding-bottom 3em
-		padding-top 4em
+		padding-top 7em
 	&_text
 		margin-bottom 2em
 		text-align center
@@ -443,93 +527,8 @@ ul
 			font-size 2em
 			&:hover
 				color AzulNav
-.Servicios
-	box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
-	// background rgba(0, 0, 0, 0.7)
-	background #FFF4BD
-	padding-top 3.7em
-	width 100%
-	min-height 500px
-	&_text
-		color black
-		text-align center
-	&_icon
-		font-size 5.5em
-		color AzulTitle
-		// vertical-align top
-		vertical-align top
-	&_contenedorImgs
-		text-align center
-		margin-top 1em
-	&_contenedorImg
-		display inline-block
-		text-align center
-		margin 1.5em 2em 2em 2em
-	&_imgText
-		color black
-		text-align center
-		// font-weight bold
-		font-size 1.1em
-	&_imgList
-		text-align left
-		font-size .9em
-		padding 0
-	&_imgListItemFlag
-		width 35px
-		height 35px
-		border-radius 50%
-.Producciones
-	box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
-	// padding-top 3.37em
-	// padding-bottom 1em
-	// background rgba(0, 0, 0, 0.5)	
-	width 100%
-	background url('../Img/bg2.jpg') no-repeat
-	background-size cover
-	background-attachment fixed
-	&_bg2
-		background rgba(0,0,0,0.5)
-		padding-top 3.5em
-		padding-bottom 1em		
-	&_galeria
-		text-align center
-	&_galeriaList
-		padding 0
-	&_titulo
-		margin-top 1em
-		margin-bottom -.2em
-	&_galeriaListItem
-		display inline-block
-		margin-bottom 1em
-	&_invite
-		color white
-		font-weight 100
-		font-size 1.5em
-		padding-bottom 2em
-	&_inviteYoutubeLink
-		color youtube
-		font-weight 700
-		font-size 1.2em
-		&:hover
-			color AzulNav
-	&_inviteVimeoLink
-		color vimeo
-		font-weight 700
-		font-size 1.2em
-		&:hover
-			color AzulNav
-	&_galeriaContenedorVideo
-		width 100%
-	&_Producciones_galeriaVideo
-		max-width 100%
-.Toñovid
-	margin-left 5px
-
-.Marginrightvid
-	margin-right 1em
-	// margin-left 4.5em
 .Contacto
-	padding-top 5em
+	padding-top 6em
 	box-shadow 0 1px 4px rgba(0, 0, 0, 0.3)		
 	padding-bottom 2em
 	width 100%
